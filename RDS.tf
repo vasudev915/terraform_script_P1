@@ -1,6 +1,6 @@
 #creating RDS instance
 resource "aws_db_subnet_group" "default" {
-  name = "main"
+  name = "mainn"
   subnet_ids = [aws_subnet.dev_pub_sub.id, aws_subnet.dev_pub_sub2.id]
 tags = {
   Name = "MyDBSG"
